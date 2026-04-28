@@ -1,0 +1,38 @@
+[project]
+name = "protonmail-mcp-connector"
+version = "0.1.0"
+description = "Model Context Protocol server for ProtonMail integration"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Michael Eakins", email = "michael@blackholesoftware.dev" }
+]
+license = { text = "MIT" }
+keywords = ["mcp", "protonmail", "ai", "claude", "email"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "mcp>=1.0.0",
+    "protonmail-api-client>=2.4.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/CrashBytes/protonmail-mcp-connector"
+Repository = "https://github.com/CrashBytes/protonmail-mcp-connector"
+Issues = "https://github.com/CrashBytes/protonmail-mcp-connector/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
