@@ -23,6 +23,7 @@ dependencies = [
     "mcp>=1.0.0",
     "protonmail-api-client>=2.4.0",
     "python-dotenv>=1.0.0",
+    "certifi>=2026.10.19",
 ]
 
 [project.urls]
